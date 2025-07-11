@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Category Page</title>
+		<meta charset="utf-8">
+		<script src="typing.js"></script>
+		<link rel="stylesheet" href="typingStyle.css">
+	</head>
+	<body>
+
+		<header id="categoryheader">
+			<h1> Choose a Category! </h1>
+		</header>
+
+		<div class= "categorydiv">
+
+			<button id = "mvbutton" onclick="getCategoryLevels('montavista')">Monta Vista</button>
+			<div id="montavista-container"></div>
+
+			<button id = "musicbutton" onclick="getCategoryLevels('music')">Music</button>
+			<div id="music-container"></div>
+
+			<button id = "moviesbutton" onclick="getCategoryLevels('movies')">Movies</button>
+			<div id="movies-container"></div>
+
+			<button id = "mealsbutton" onclick="getCategoryLevels('meals')">Meals</button>
+			<div id="meals-container"></div>
+
+			<br><br>
+			<button class = "categorybutton" onClick = "checkButtons(document.getElementsByName('options'))">
+				GO!
+			</button>
+
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Results Page</title>
+		<meta charset="utf-8">
+		<script src="typing.js"></script>
+		<link rel="stylesheet" href="typingStyle.css">
+	</head>
+	<body onload = "displayResults()">
+
+		<header id="resultsheader">
+			<h1> Results </h1>
+		</header>
+
+			<div class = "results">
+				<center> 
+				<p id="resultspoints">
+					Points:
+				</p>
+				<p id="resultsaccuracy">
+					Accuracy:
+				</p>
+				<p id="resultswpm">
+					WPM:
+				</p> 
+				</center>
+			</div>
+
+			<div class="resultsdiv">
+				<button class = "resultsbutton" onClick = "goToNextPage('categoryPage.html')" >
+					Choose Another Category?
+				</button>
+
+				<button class = "resultsbutton" onClick = "goToNextPage('gamePage.html')" >
+					Another Round? 
+				</button>
+
+				<button class = "resultsbutton" onClick = "goToNextPage('statsPage.html')" >
+					Stats 
+				</button>
+
+				<button class = "resultsbutton" onClick = "resetStats()" >
+					Restart
+				</button>
+			</div>
+			
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Stats Page</title>
+		<meta charset="utf-8">
+		<script src="typing.js"></script>
+		<link rel="stylesheet" href="typingStyle.css">
+	</head>
+	<body onload = "displayStats()">
+
+		<header id="resultsheader">
+			<h1> Stats </h1>
+		</header>
+
+			<div class="stats">
+				
+				<p id="statsnumrounds">
+					Number of Rounds:
+				</p>
+				
+				<p id="statsavgaccuracy">
+					Avg Accuracy:
+				</p>
+				<p id="statsavgwpm">
+					Avg WPM:
+				</p>
+				<p id="statsprefcategory">
+					Preferred Category:
+				</p>
+
+			</div>
+
+			<div class="statsdiv">
+
+				<button class = "statsbutton" onClick = "goToNextPage('resultsPage.html')" >
+					Back To Results
+				</button> 
+
+				<button class = "statsbutton" onClick = "resetStats()" >
+					Reset Stats
+				</button> 
+
+			</div>
+			
+	</body>
+</html>

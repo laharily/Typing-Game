@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Game Page</title>
+		<meta charset="utf-8">
+		<script src="typing.js"></script>
+		<link rel="stylesheet" href="typingStyle.css">
+	</head>
+	<body onload = "displaySentence()" > <!--https://www.tutorialspoint.com/How-do-I-call-a-JavaScript-function-on-page-load#:~:text=The%20first%20approach%20for%20calling,the%20function%20from%20the%20JavaScript.-->
+
+		<header id="gameheader">
+			<h1 id="titleheader"> Typing Mania </h1>
+		</header>
+
+			<div id="timer">
+				<center> <h2 id="timerDisplay">00:40</h2> </center>
+			</div>
+
+		<center>
+		<div id="sentenceContainer">
+			<p id="sentence"> </p>
+		</div>
+		</center>
+
+		<!--https://www.w3schools.com/tags/tag_textarea.asp-->
+		
+		<center> <textarea id="textbox" value="" rows="5" cols="80" readOnly="true"> </textarea> </center>
+
+    	
+
+  		<p id="test">
+  		</p>
+
+  		<div class = "gamediv">
+	  		<button class = "gamebutton" id = "startButton" onClick = "startTimer()">
+					Start 
+			</button>
+
+			<button class = "gamebutton" id = "stopButton" onClick = "stopTimer()" disabled = "true">
+					Stop 
+			</button>
+
+			<button class = "gamebutton" onClick = "goToNextPage('resultsPage.html')" >
+					View Results 
+			</button>
+
+		</div>
+
+	</body>
+</html>
